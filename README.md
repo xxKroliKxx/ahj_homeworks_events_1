@@ -1,2 +1,2 @@
-# ahj-homeworks_dom_1 [![Build status](https://ci.appveyor.com/api/projects/status/ap4yea841677ru44?svg=true)](https://ci.appveyor.com/project/xxKroliKxx39311/ahj-homeworks-dom-1)
-https://xxkrolikxx.github.io/ahj-homeworks_dom_1/
+# ahj_homeworks_events_1 [![Build status](https://ci.appveyor.com/api/projects/status/st3g14fn7m65kt63?svg=true)](https://ci.appveyor.com/project/xxKroliKxx39311/ahj-homeworks-events-1)
+https://xxkrolikxx.github.io/ahj_homeworks_events_1/
