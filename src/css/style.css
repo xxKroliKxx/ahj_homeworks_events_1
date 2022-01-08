@@ -1,0 +1,81 @@
+.board-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+}
+
+.cell {
+    width: 128px;
+    height: 128px;
+    border: 1px antiquewhite solid;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.cell__active {
+    background-image: url('../img/goblin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.scores {
+    margin-left: 3px;
+}
+
+.misses {
+    margin-left: 10px;
+}
+
+.heading {
+    color: darkgrey;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.scores {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.game_end {
+    position: fixed;
+    top: 100px;
+    right: 50%;
+    transform: translate(50%, 0);
+
+    width: 200px;
+    height: 100px;
+    border: 3px solid #b59f5b;
+    background-color: floralwhite;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_end_display {
+    display: none;
+}
+
+.game_end_span{
+    color: #b59f5b;
+    font-size: 18px;
+    font-weight: bold;
+}
