@@ -17,16 +17,27 @@ export default class Board {
     this.timerId = null;
   }
 
-  init(cells) {
+  init(cells, button) {
     this.setCellTimer();
     this.cells = Array.from(cells);
     this.setCellClickEvent();
+    button.addEventListener('click', (event) => this.onButtonClick(event));
   }
 
   onCellClick(event) {
     if (this.misses === 5) return;
     const index = this.cells.indexOf(event.currentTarget);
     if (this.goblin.hit(index)) { this.setScores(); } else { this.setMisses(); }
+  }
+
+  onButtonClick() {
+    this.misses = 0;
+    this.popElement.classList.add('game_end_display');
+    this.scores = 0;
+    this.misses = 0;
+    this.missesElement.innerText = this.misses;
+    this.scoresElement.innerText = this.scores;
+    this.setCellTimer();
   }
 
   changeCell() {
